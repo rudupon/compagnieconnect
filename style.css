@@ -86,8 +86,8 @@ a {
 
 /* Blauwe zijbalk */
 .hero-bar {
-  flex: 0 0 32%;
-  max-width: 380px;
+  flex: 0 0 40%;
+  max-width: 430px;
   background: var(--navy);
   padding: 32px;
 }
