@@ -1,38 +1,131 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website in onderhoud</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f4f4f9;
-            color: #333;
-            text-align: center;
-        }
-        .container {
-            padding: 20px;
-        }
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-        }
-        p {
-            font-size: 1.2rem;
-            color: #666;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Compagnie Connect</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+<link rel="icon" type="image/png" href="/resources/favicon-96x96.png" sizes="96x96" />
+<link rel="shortcut icon" href="/resources/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/resources/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="Compagnie Connect" />
+<link rel="manifest" href="/resources/site.webmanifest" />
 </head>
 <body>
-    <div class="container">
-        <h1>Website in aanbouw</h1>
-        <p>Bedankt voor uw geduld. We werken hard aan een nieuwe website.</p>
+
+<header class="nav">
+  <div class="nav-inner">
+    <span class="nav-brand">Compagnie Connect</span>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#activiteiten">Activiteiten</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <div class="layout-wrapper">
+    
+    <div class="hero-bar">
+      <div class="hero-logo-plate">
+        <img src="/resources/logo-master-breed.png" alt="Compagnie Connect logo" class="hero-logo">
+      </div>
     </div>
+
+    <div class="content-wrapper">
+      
+      <section id="home" class="hero-inner">
+        <p class="hero-eyebrow">Business Development – Events, Partnerships & Education</p>
+        <h1>Compagnie Connect</h1>
+        <p class="hero-sub">Compagnie Connect richt zich op het creëren van waardevolle verbindingen tussen organisaties, mensen en opportuniteiten & <br>
+          ondersteunt partners vanuit onze ruime ervaring in business development en opleidingen.</p>
+        <a href="#contact" class="hero-cta">Neem contact op</a>
+      </section>
+
+      <section id="activiteiten" class="info">
+        <div class="info-inner">
+          <div class="info-text">
+            <h2>Over Compagnie Connect</h2>
+            <p>Compagnie Connect richt zich op het creëren van waardevolle verbindingen tussen organisaties, mensen en opportuniteiten & <br>
+            ondersteunt partners vanuit onze ruime ervaring in business development en opleidingen.</p>
+          </div>
+          <div class="info-list">
+            <h3>Diensten</h3>
+            <ul>
+              <li>In kaart brengen van nieuwe samenwerkingsmogelijkheden</li>
+              <li>Business development en relatieontwikkeling</li>
+              <li>Uitwerking van strategische partnerships</li>
+              <li>Uitbouw en activatie van professionele netwerken</li>
+              <li>Ontwikkeling van concepten rond events en ontmoetingsmomenten</li>
+              <li>Stakeholdermanagement en langetermijnrelaties</li>
+              <li>Ontwerp en de uitwerking van nieuwe opleidingstrajecten die nieuwe partnerships ondersteunen</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+  <section id="contact" class="contact">
+    <div class="contact-inner">
+      <h2>Contact</h2>
+      <p class="contact-sub">Klaar om samen te werken? <br> Neem contact op via onderstaand e-mailadres of formulier.</p>
+      
+      <div class="contact-content">
+        
+        <div class="contact-details">
+          <div>
+            <span class="label">E-mail</span>
+            <a href="mailto:info@compagnieconnect.be">info@compagnieconnect.be</a>
+          </div>
+        </div>
+
+        <div class="contact-form-wrapper">
+          <form action="https://formsubmit.co/info@compagnieconnect.be" method="POST" class="contact-form">
+            
+            <!-- Anti-bot: Honeypot veld (onzichtbaar) -->
+            <input type="text" name="_honey" style="display:none">            
+            <!-- Anti-bot: Zorgt dat spam tegengehouden wordt met een Captcha -->
+            <input type="hidden" name="_captcha" value="true">
+            
+            <input type="hidden" name="_next" value="https://compagnieconnect.be/">
+
+            <div class="form-group">
+              <label for="naam">Naam</label>
+              <input type="text" id="naam" name="Naam" required placeholder="Jouw naam">
+            </div>
+
+            <div class="form-group">
+              <label for="email">E-mailadres</label>
+              <input type="email" id="email" name="Email" required placeholder="jouw@email.be">
+            </div>
+
+            <div class="form-group">
+              <label for="bericht">Bericht</label>
+              <textarea id="bericht" name="Bericht" rows="5" required placeholder="Hoe kunnen we je helpen?"></textarea>
+            </div>
+
+            <button type="submit" class="form-submit hero-cta">Verstuur bericht</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>&copy; <span id="year"></span> Compagnie Connect</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
